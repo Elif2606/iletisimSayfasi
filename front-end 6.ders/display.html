@@ -1,0 +1,51 @@
+<!--    display=csste bir öğenin sayfada nasıl görünebileceğini kontrol etmek için kullanılan bir özelliktir. Farklı ögeleri satır içi (inline), satır içi blok gibi çeşitli şekillerde göstermek için kullanılır      -->
+    <!--  display blok= 
+        1.Bir ögeyi blok düzeyinde bir öğeye dönüştürür.
+        2.Aynı satırda yer alamaz. -->
+      <!-- display inline = bir ögeyi satır düzeyinde bir öğeye dönüştürür. -->
+      <!-- display inline blok= 
+        1. İçerik kadar genişlemesini sağlar.
+        2. Aynı satırda yer alabilir. 
+        3. Padding,margin,yükseklik ayarlarını yapmamızı sağlar.(Genişlik ayarını yapmamıza izin vermez.) -->
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Display</title>
+            <style>
+            p{
+                color: white;
+            }
+            .blok{
+                display: block;
+               background-color: red;
+               width: 200px;
+               height: 200px;
+            }
+            .inline{
+                display: block;
+                width: 200px;
+                height: 200px;
+                background-color: green;
+            }
+            .inlineblok{
+                background-color: blue;
+                display:block ;
+                width: 200px;
+                height: 200px;
+            }
+            </style>
+        </head>
+        <body>
+            <h1>css display property</h1>
+            <p class="blok">Kırmızı paragraf</p>
+            <h1 class="inlineblok">Deneme</h1>
+            <p class="inline">Yeşil paragraf</p>
+            <p class="inlineblok">Mavi paragraf</p>
+            
+        </body>
+        </html>
