@@ -14,8 +14,36 @@
     border-radius: 50%;
     width: 140px;
     height: 140px;
-  }
+    
+   }
 
+    .gorsel {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+  /* .lead{
+    text-align:justify; 
+  }
+   */
+  .container {
+    margin: 0 auto; /* Div'i konteyner içinde yatay olarak ortalar */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.col-lg-4 {
+    display: inline-block;
+    text-align: center;
+    width: 30%; /* Sütunların genişliği */
+    margin: 0 10px; /* Sütunlar arasındaki boşluk */
+
+}
+
+.gorsel-img {
+    max-width: 100%; /* Görsellerin genişliği konteynırın genişliğini aşmaz */
+}
 
     </style>
 
@@ -25,39 +53,28 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> WomenInTech </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"> Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Link </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action </a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> WomenInTech </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home"> Anasayfa </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  href="#footer"> Link </a>
+          </li>
+         
           
-          </div>
-        </div>
-      </nav>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+
     
 <!--  slogan -->
 
@@ -98,11 +115,15 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <a href="#home"></a>
+                 <home id="home">
+        <h2 class="featurette-heading fw-normal lh-1">Figen Aktuna </h2>
+        <p class="lead">23 yıldır ödeme sistemleri sektöründe çalışan Figen Aktuna, kredi kartı, banka kartı ve ön ödemeli kart ihraç etme, kişiselleştirme, anahtar ve sertifika yönetimi, yetkilendirme, EMV işlem yönetimi, issuer scripting, HCE ve terminal yönetimi gibi konularda geniş bir deneyime sahiptir. İş geliştirme, analiz ve tasarım, proje yönetimi, ekip yönetimi ve projelerin kritik noktalarında yazılım geliştirme modülleri üzerine çalışmanın yanı sıra, EMV profil tasarımı ve sertifikasyon danışmanlığı da yapmıştır. Kariyeri boyunca 15'ten fazla önde gelen banka ve finansal kuruluş ile çalışmıştır.
+
+          Ödeme sistemlerindeki yeniliklere olan ilgisi ve yeni şeyler öğrenme arzusu, Türkiye, Avrupa ve dünya genelinde öncü projelere liderlik etmesini sağlamıştır. 2018 yılında Microsoft, KAGIDER ve Aydın Doğan Vakfı iş birliğiyle düzenlenen Teknolojinin Kadın Liderleri yarışmasında Yılın Başarılı Kadın Yazılım Geliştiricisi ödülüne layık görülmüştür. Eylül 2021'de kendi işini kurarak, geniş deneyim ve güçlü yeteneklerini kullanarak yenilikçi sistemler tasarladığı projelerde danışmanlık hizmeti sunmaya başlamıştır.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+       <img class="gorsel" src="figen.jpg" alt="">
       </div>
     </div>
 
@@ -110,11 +131,12 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1"> Lila İbrahim </h2>
+        <p class="lead">Google DeepMind'in COO'su Lila Ibrahim, yapay zeka alanındaki çalışmalarıyla dikkat çekiyor. Sektörde 30 yılı aşkın deneyime sahip olan Ibrahim, yapay zeka teknolojilerinin gelişimi ve uygulanmasında önemli bir etkiye sahip. Önceden Intel, Coursera, Kleiner gibi önde gelen şirketlerde üst düzey yöneticilik yapmış olan deneyimli yönetici, teknoloji sektöründe liderlik becerilerini kanıtlayarak saygınlık kazandı.
+          Ibrahim, bir taraftan Team4Tech'in kurucu ortağı ve başkanı olarak, gençlere teknoloji eğitimi ve inovasyon fırsatları sağlayarak sosyal etkisini artırıyor. Bu kar amacı gütmeyen organizasyon aracılığıyla dezavantajlı topluluklardaki gençlerin teknolojiye erişimini artırıyor ve onlara yeni fırsatlar sunuyor. Ibrahim, kadınların teknoloji sektöründeki temsilini artırmak için aktif bir şekilde çalışıyor. Bu çabaları, kadınların teknoloji alanında daha fazla rol almasını teşvik etmek ve çeşitlilik ve kapsayıcılığı destekliyor. İngiltere AI Konseyi'ne üye olmasıyla ulusal düzeyde yapay zeka politikaları ve stratejileri üzerinde etkili bir rol oynuyor. Bu tür uluslararası ilişkiler, teknoloji alanında küresel düzeyde etkili olmasını sağlıyor.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+       <img class="gorsel" src="lila.jpg" alt="">
       </div>
     </div>
 
@@ -122,11 +144,11 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1"> Sheryl Sandberg </h2>
+        <p class="lead">Facebook’un eski COO’su Sheryl Sandberg, teknoloji dünyasındaki en güçlü kadın liderlerden biri olarak tanınır. 2001-2007 yılları arasında Google’da üst düzey görevlerde bulunduktan sonra, sosyal medya sektöründe üst düzey yönetici pozisyonuna gelen ilk kadın oldu. 2013 yılında yayımladığı "Lean In: Women, Work, and the Will to Lead" adlı kitabında, iş dünyasında kadınların karşılaştığı zorluklara ve cinsiyet eşitliği mücadelesine odaklandı. Kitap, kadınlara daha fazla fırsat sunulmasının ve toplumsal kalıp yargıların yıkılmasının önemini vurgulamaktadır.</p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+      <img class="gorsel" src="sheryl.jpg" alt="">
       </div>
     </div>
 
@@ -140,19 +162,23 @@
 <!-- Yuvarlaklar-------------------------------------------------------------------------------------------------------------------->
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div class="container">
+    
+    <div class=" row">
         <div class="col-lg-4">
           <div>
             <img class="gorsel-img"
                  src="resim1.jpeg" alt="">
+                 <a href="#footer"></a>
+                 <footer id="footer">
         </div>
+        
           <h2 class="fw-normal">Fırsat Eşitliği</h2>
           <p>Teknolojide kadınların potansiyelini ortaya çıkarmak, sadece bireysel başarıları artırmakla kalmaz, aynı zamanda sektörde daha 
             yenilikçi ve kapsayıcı çözümler üretir.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          <p><a class="btn btn-secondary" href="#">Başa Dön »</a></p>
+        
         </div><!-- /.col-lg-4 -->
-
-
 
 
         <div class="col-lg-4">
@@ -163,22 +189,20 @@
           <h2 class="fw-normal">Cinsiyetsiz Başarı</h2>
           <p>Başarıya giden yolda cinsiyet farkı gözetmeksizin, yetenek ve bilgi temelinde bir gelecek inşa etmek, teknolojinin her alanında 
             daha eşit ve adil bir ortam yaratacaktır.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-
-
-
-
+          <p><a class="btn btn-secondary" href="#">Başa Dön »</a></p>
+        </div>
+        
+        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <div>
                 <img class="gorsel-img"
                      src="resim3.jpeg" alt="">
                     </div>
-          <h2 class="fw-normal">Çeşitlilik ve Kapsayıcılık:</h2>
-          <p>Farklı bakış açılarını kucaklayan bir teknoloji sektörü, cinsiyet dengesini sağlayarak daha yaratıcı, sürdürülebilir ve yenilikçi çözümler sunar.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
+          <h2 class="fw-normal">Çeşitlilik ve Kapsayıcılık</h2>
+          <p>Farklı bakış açılarını kucaklayan bir teknoloji sektörü, cinsiyet dengesini sağlayarak daha yaratıcı, daha kapsayıcı, daha sürdürülebilir ve yenilikçi çözümler sunar.</p>
+          <p><a class="btn btn-secondary" href="#">Başa Dön »</a></p>
       </div><!-- /.row -->
+    </div><!-- /.col-lg-4 -->
 
   </div>
 
